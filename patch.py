@@ -329,6 +329,7 @@ def patch_npk_package(package, key_dict):
         run_shell_command(f"sudo sed -i '7s#.*#  ********************* Free Version (Non-Commercial) ***********************#' {logo}")
         run_shell_command(f"sudo sed -i '8s#.*#  ***************************************************************************#' {logo}")
         run_shell_command(f"sudo sed -i '6a#.*#  ***************************************************************************#' {logo}")
+        run_shell_command(f"sudo sed -i '8a#.*#  ***************************************************************************#' {logo}")
         #run_shell_command(f"sudo sed -i '$a\TEST' {logo}")
         #run_shell_command(f"sudo sed -i '8a\1#' {logo}")
         print(f"pack {extract_dir} ...")
