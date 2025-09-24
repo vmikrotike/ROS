@@ -326,7 +326,7 @@ def patch_npk_package(package, key_dict):
         run_shell_command(f"sudo sed -i '5s#.*#  MMM      MMM  III  KKK KKK   RRRRRR    OOO  OOO     TTT      III  KKK KKK#' {logo}")
         run_shell_command(f"sudo sed -i '6s#.*#  MMM      MMM  III  KKK  KKK  RRR  RRR   OOOOOO      TTT      III  KKK  KKK#' {logo}")
         #run_shell_command(f"sudo sed -i '8s#.*#  MikroTik RouterOS 7.17 Free Version (Non-Commercial)#' {logo}")
-        run_shell_command(f"sudo sed -i '8s#.*#  ********************* Free Version (Non-Commercial) **********************\\n\\n#' {logo}")
+        run_shell_command(f"sudo sed -i '8s#.*#  ********************* Free Version (Non-Commercial) **********************                                                                                                             #' {logo}")
         #run_shell_command(f"sudo sed -i '8a\1#' {logo}")
         print(f"pack {extract_dir} ...")
         run_shell_command(f"rm -f {squashfs_file}")
