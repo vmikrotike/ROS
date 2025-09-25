@@ -318,7 +318,7 @@ def patch_npk_package(package, key_dict):
         run_shell_command(f"unsquashfs -d {extract_dir} {squashfs_file}")
         patch_squashfs(extract_dir, key_dict)
         logo = os.path.join(extract_dir,"nova/lib/console/logo.txt")
-        run_shell_command(f"sudo sed -i '1d' {logo}")
+        #run_shell_command(f"sudo sed -i '1d' {logo}")
         run_shell_command(f"sudo sed -i '1s#.*#  MMM      MMM  III  KKK                           TTTTTTTTTTT  III  KKK#' {logo}")
         run_shell_command(f"sudo sed -i '2s#.*#  MMMM    MMMM       KKK                           TTTTTTTTTTT       KKK#' {logo}")
         run_shell_command(f"sudo sed -i '3s#.*#  MMM MMMM MMM  III  KKK  KKK  RRRRRR     OOOOOO       TTT      III  KKK  KKK#' {logo}")
